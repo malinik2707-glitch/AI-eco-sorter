@@ -41,3 +41,27 @@ ISSUES/CHALLENGES
 
 < some images were distrubing; only safe items were retained
 < slight imbalance in image numbers between classes
+
+## DAY 2- PREPROCESSING
+
+It includes resizing images,converting to rgb/grayscale and displaying histograms.The preprocessing ensures the dataset is ready for cnn training.
+
+FEATURES:
+> load images from dataset folders train/test/validation.
+> Resize images to a standard size 224x224
+> convert images to RGB TO CNN input
+> convert images to grayscale from histogram visualization
+> display grayscale histogram for understanding pixel intensity
+
+
+## DAY 3 - Normalization & CNN MODEL DESIGN
+
+ Day 3 fouses on preprocessing and cnn model design for echo sorter.The steps include image normalization, grayscale convertion and cnn architecture design for feature extraction.
+
+ FEATURES:
+
+ > normalize pixel values 0-1 range for faster convergence
+>  histogram visualization to analyze pixel intensity distribution
+> cnn model design
+> INPUT-CONV2D-MAXPOOLING-CONV2D-MAXPOOLING-DENSE-DROUPOUT-OUTPUT LAYER
+
