@@ -1,13 +1,13 @@
 # AI-eco-sorter
 7 days mini project using python ,aiml
 
-# DAY-1 DATASET COLLECTION & PREPARATION :)
+# ✍DAY-1 DATASET COLLECTION & PREPARATION :)
 
 __PROJECT OVERVIEW__
 
 Eco sorter is AI system that classifies waaste into different categories automatically.On Day-1, we focused on collecting and organizing dataset,which is the foundation for training the AI model.
 
-__OBJECTIVE OF DAY-1__
+🔔OBJECTIVE 
 * Finalize waste categories
 * collect images for each class from online sources and manual curation
 * organize dataset for AI training
@@ -18,7 +18,7 @@ __OBJECTIVE OF DAY-1__
 The dataset is uploaded to google drive due to size limitations on github.
 here we go 👉 <https://drive.google.com/file/d/1dVgasfuLaY5RVPZus7lVIBnjRKdxMHI_/view?usp=sharing>
 
-# DATASET CONTAINS
+# 📁DATASET CONTAINS
 - Recyclable
 - non-Recyclable
 - Organic
@@ -65,3 +65,33 @@ FEATURES:
 > cnn model design
 > INPUT-CONV2D-MAXPOOLING-CONV2D-MAXPOOLING-DENSE-DROUPOUT-OUTPUT LAYER
 
+OUTPUT:
+
+    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ conv2d_6 (Conv2D)               │ (None, 222, 222, 32)   │           896 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_6 (MaxPooling2D)  │ (None, 111, 111, 32)   │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_7 (Conv2D)               │ (None, 109, 109, 64)   │        18,496 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_7 (MaxPooling2D)  │ (None, 54, 54, 64)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_8 (Conv2D)               │ (None, 52, 52, 128)    │        73,856 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ max_pooling2d_8 (MaxPooling2D)  │ (None, 26, 26, 128)    │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ flatten_2 (Flatten)             │ (None, 86528)          │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_4 (Dense)                 │ (None, 128)            │    11,075,712 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dropout_2 (Dropout)             │ (None, 128)            │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_5 (Dense)                 │ (None, 5)              │           645 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 11,169,605 (42.61 MB)
+ Trainable params: 11,169,605 (42.61 MB)
+ Non-trainable params: 0 (0.00 B)
+
+ 
