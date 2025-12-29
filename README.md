@@ -94,4 +94,104 @@ OUTPUT:
  Trainable params: 11,169,605 (42.61 MB)
  Non-trainable params: 0 (0.00 B)
 
- 
+ ## DAY 4 - MODEL TRAINING
+
+
+📌 Task of the Day
+
+Today we focused completely on training the CNN model for our Eco-Sorter waste classification project.
+
+🎯 Objectives
+
+✔️ Load the prepared dataset
+✔️ Build the CNN model
+✔️ Train the model
+✔️ Monitor accuracy & loss
+✔️ Save trained model
+
+Dataset contains image categories such as:
+
+🧃 Plastic
+
+📰 Paper
+
+🥫 Metal
+
+🍌 Organic
+
+🧱 medical waste
+
+
+👉 Images were resized to 224 × 224
+👉 Pixel values were normalized between 0 and 1
+
+🧩 Model Architecture
+
+We used a Convolutional Neural Network (CNN) containing:
+
+🔹 Convolution layers
+🔹 Max-Pooling layers
+🔹 Dropout layer (to reduce overfitting)
+🔹 Dense fully-connected layer
+🔹 Softmax output layer
+
+Optimizer → Adam
+Loss → Categorical Crossentropy
+Metric → Accuracy
+
+🏋️‍♂️ Training Details
+
+📌 Model trained using:
+
+Epochs: 10–20
+
+Batch size: 32
+
+Data augmentation applied:
+
+rotation
+
+zoom
+
+flip
+
+
+📊 Result Visualizations
+
+📈 Accuracy Graph
+
+Displays:
+
+🔵 Training Accuracy
+🟠 Validation Accuracy
+
+Used to observe learning progress.
+
+📉 Loss Graph
+
+Displays:
+
+🔵 Training Loss
+🟠 Validation Loss
+
+Used to detect overfitting/underfitting.
+
+🔥 Additional Evaluation
+
+We also generated:
+
+✅ Confusion Matrix
+✅ Heatmap Visualization
+
+Helps analyze true vs predicted classes.
+
+🏆 Outcome
+
+✔️ CNN model successfully trained
+✔️ Performance metrics plotted
+✔️ Model saved for testing
+✔️ Ready for Day-5: Model Testing
+
+
+
+
