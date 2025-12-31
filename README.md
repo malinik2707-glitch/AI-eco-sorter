@@ -191,6 +191,45 @@ Helps analyze true vs predicted classes.
 ✔️ Performance metrics plotted
 ✔️ Model saved for testing
 
+## DAY 5- MODEL EVALUATION
+
+Objective
+
+Evaluate the trained CNN model on test images to measure its performance in classifying different waste types such as plastic, paper, metal, glass, and organic.
+
+Steps Performed
+
+1. Load the Trained Model
+      The CNN model trained on preprocessed images was loaded for evaluation.
+
+2. Prepare Test Data
+
+Test images were loaded and rescaled to match the model input size.
+Data was structured into folders according to classes: plastic, paper, metal, glass, organic.
+
+3. Model Evaluation
+
+The model was evaluated using metrics:
+
+Test Loss – measures the difference between predicted and actual labels.
+Test Accuracy – percentage of correctly classified images.
 
 
+4. Confusion Matrix Analysis
+
+A confusion matrix was generated to analyze per-class performance.
+This shows which classes the model predicts well and where it might make errors.
+
+
+5. Visualization
+
+Heatmaps were plotted to visually represent the confusion matrix.
+This makes it easier to interpret the model’s predictions across classes.
+
+
+Observations / Expected Outcomes
+
+The model shows high accuracy for classes with more training images.
+Some misclassifications may occur for visually similar waste types.
+Confusion matrix provides a clear view of strengths and weaknesses in classification.
 
