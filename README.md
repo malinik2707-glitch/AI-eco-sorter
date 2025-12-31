@@ -226,10 +226,42 @@ This shows which classes the model predicts well and where it might make errors.
 Heatmaps were plotted to visually represent the confusion matrix.
 This makes it easier to interpret the model’s predictions across classes.
 
-
-Observations / Expected Outcomes
+## DAY 6- PREDICTION
+Observations
 
 The model shows high accuracy for classes with more training images.
 Some misclassifications may occur for visually similar waste types.
 Confusion matrix provides a clear view of strengths and weaknesses in classification.
+
+Objective
+
+Use the trained CNN model to predict the class of unseen medical waste images and demonstrate how the ECO sorter can classify items such as bandages, plastic, glass, metal, and paper.
+
+Steps Performed
+1. Load Trained Model
+The CNN model trained on medical waste images was used for prediction.
+
+2. Prepare Input Images
+Single or multiple test images were preprocessed:
+Resized to the model input size (224×224 pixels)
+Pixel values scaled between 0 and 1
+
+3. Prediction Process
+Each input image was fed into the model.
+The model outputs predicted class probabilities.
+The class with the highest probability was selected as the predicted class.
+
+4. Results Analysis
+Predicted labels show the type of medical waste for each image: Bandage, Plastic, Glass, Metal, Paper.
+Confidence scores indicate how certain the model is about its prediction.
+
+5. Visualization
+Images were displayed alongside their predicted class and confidence to clearly show model predictions.
+
+Observations / Expected Outcomes
+The model predicts correctly for most clearly distinguishable waste types.
+Some misclassifications may occur for visually similar items.
+
+
+
 
