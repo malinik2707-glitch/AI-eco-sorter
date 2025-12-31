@@ -262,6 +262,35 @@ Observations / Expected Outcomes
 The model predicts correctly for most clearly distinguishable waste types.
 Some misclassifications may occur for visually similar items.
 
+## DAY 7 - RESULT
+objective
 
+Demonstrate the final output of the ECO sorter, showing how it classifies each medical waste image (Bandage, Plastic, Glass, Metal, Paper) and simulates automatic sorting into appropriate bins.
+
+Steps Performed
+
+1. Load Trained Model
+The CNN model trained on medical waste images is used for final output.
+2. Prepare Input Images
+Test images (single or multiple) are preprocessed:
+Resized to 224×224 pixels
+Scaled pixel values between 0 and 1
+
+3. Prediction and Sorting Simulation
+Each input image is fed into the model.
+The model outputs predicted class probabilities.
+The class with the highest probability is selected as the predicted class.
+Based on the predicted class, the image is considered sorted into the corresponding bin.
+
+4. Visualization
+Input images are displayed with predicted class and confidence.
+Optional heatmap / confusion matrix can be generated if true labels are available, showing the overall accuracy of sorting.
+
+Observations 
+
+The ECO sorter correctly classifies most medical waste images.
+Each predicted label corresponds to a bin for sorting, e.g., Bandage, Plastic, Glass, Metal, Paper.
+Misclassifications may occur for visually similar items, but the workflow demonstrates automatic sorting logic.
+Visualization of predictions and heatmaps makes the workflow clear and presentable.
 
 
