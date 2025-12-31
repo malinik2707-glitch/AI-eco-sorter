@@ -293,4 +293,4 @@ Each predicted label corresponds to a bin for sorting, e.g., Bandage, Plastic, G
 Misclassifications may occur for visually similar items, but the workflow demonstrates automatic sorting logic.
 Visualization of predictions and heatmaps makes the workflow clear and presentable.
 
-
+**OUTCOME📜** <img width="640" height="480" alt="screenshot" src="https://github.com/user-attachments/assets/966c5d4a-fc83-4d08-b384-d92ba2f0278f" />
