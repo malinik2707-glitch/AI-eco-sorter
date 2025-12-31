@@ -190,7 +190,6 @@ Helps analyze true vs predicted classes.
 ✔️ CNN model successfully trained
 ✔️ Performance metrics plotted
 ✔️ Model saved for testing
-✔️ Ready for Day-5: Model Testing
 
 
 
